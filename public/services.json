@@ -1,0 +1,39 @@
+[
+    {
+      "name": "Hourly Home Care ",
+      "img":"https://image.freepik.com/free-photo/drug-prescription-treatment-medication_1150-44091.jpg",
+      "id":"1",
+      "details":"Our Hourly Care program allows you or your loved one to manage a personal schedule, enabling us to be available at any moment to meet your needs. "
+    },
+    {
+      "name": "Daily Home Care ",
+      "img":"https://image.flaticon.com/icons/png/512/808/808993.png",
+      "id":"2",
+      "details":"Daily Care provides older adults with 24/7, around-the-clock care. Clients and their families enjoy peace of mind with reliable"
+    },
+    {
+      "name": "Hospital To Home Care ",
+      "img":"https://image.freepik.com/free-photo/pediatric-dentist-showing-correct-dental-hygiene-using-mock-up-skeleton-teeth-stomatologist-doctor-explaining-proper-dental-hygiene-patient-holding-sample-human-jaw-with-toothbrush_482257-13325.jpg",
+      "id":"3",
+      "details":"One of the leading causes of hospital readmission or slow post-hospitalization recovery is the lack of proper support following a hospital discharge."
+    },
+    {
+      "name": "Respite To Home Care ",
+      "img":"https://image.freepik.com/free-photo/happy-dentistiry-coworkers-smiling-standing-line-portrait-stomatology-team-dental-reception-with-arms-crossed-looking-camera-wearing-uniform_482257-11986.jpg",
+      "id":"4",
+      "details":"Respite Care is temporary care to provide family caregivers relief from the full-time care they have been providing for a loved one. "
+    },
+    {
+      "name": "Specialized Care ",
+      "img":"https://image.freepik.com/free-vector/red-heart-with-heartbeat-line-medical-background_1017-26835.jpg",
+      "id":"5",
+      "details":"Many assume that when the needs of an aging adult reach a certain point, their options for care are limited to a care facility."
+    }
+    ,
+    {
+      "name": "Advanced Care ",
+      "img":"https://image.freepik.com/free-photo/female-ophthalmologist-examining-eyes-boy-clinic_23-2148241482.jpg",
+      "id":"6",
+      "details":"Many assume that when the needs of an aging adult reach a certain point, their options for care are limited to a care facility."
+    }
+  ]
