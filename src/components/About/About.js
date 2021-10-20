@@ -10,8 +10,8 @@ const About = () => {
                 <Card.ImgOverlay>
                     <Card.Title><h1 className="text-info fw-bolder border-bottom border-dark border-3 bg-transparent">About Us</h1></Card.Title>
                     <Card.Text className="fw-bold">
-                       <h3> We Provide Most Proffesional Service
-                        Since 2000..</h3>
+                        <h3> We Provide Most Proffesional Service
+                            Since 2000..</h3>
                     </Card.Text>
                     <Card.Text>
                         <h5 className="border-bottom border-danger w-25 mx-auto border-4 pb-2">Why Choose Us?</h5>

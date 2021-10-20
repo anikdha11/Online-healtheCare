@@ -1,31 +1,31 @@
 import React from 'react';
 import { Button, Col, Form } from 'react-bootstrap';
-import { useHistory,useLocation } from 'react-router';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
     const { signInUsingGoogle, handleNameChanged,
         handlePassword, handleRegistration, toggoleLogin, isLogin } = useAuth();
-        const location = useLocation()
-        const history = useHistory();
+    const location = useLocation()
+    const history = useHistory();
 
-   const redirect_uri =location.state?.from || '/home'
- console.log('came from', location.state?.from)
-const handleGoogleLogin = () =>{
-     signInUsingGoogle()
-     .then(result =>{
-     history.push(redirect_uri)
-     })
-}
+    const redirect_uri = location.state?.from || '/home'
+    console.log('came from', location.state?.from)
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_uri)
+            })
+    }
 
     return (
         <div className="mb-4 App">
 
             <Form onSubmit={handleRegistration} >
                 <h1 className="fw-bold text-info">Please {isLogin ? "Login" : "Registered"}</h1>
-                {!isLogin &&<Col>
-                  <Form.Label className="fw-bold">Name</Form.Label>
+                {!isLogin && <Col>
+                    <Form.Label className="fw-bold">Name</Form.Label>
                     <Form.Control className="mb-3 w-50 mx-auto" placeholder="First name" />
                 </Col>}
                 <Form.Group className="mb-3 w-50 mx-auto" controlId="formBasicEmail">
