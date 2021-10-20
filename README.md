@@ -1,12 +1,12 @@
 # This is Online Health Care website
 
-## This project is here [HealthCare](https://health-care-f37f7.web.app/).
+* This Live is here [HealthCare](https://health-care-f37f7.web.app/).
 
-## Here this you can see some HealthCare Service
+* Here this you can see some HealthCare Service.
 
-## you can see some causole
+* you can see some carusol
 
-## added firebase Authentication system...
+* added firebase Authentication system...
 
 ### Thats a responsive site....
 
