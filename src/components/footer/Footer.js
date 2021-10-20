@@ -30,7 +30,7 @@ const Footer = () => {
      <Link to="/contract">  <Button className="mt-2" variant="outline-secondary">Contract Us</Button> </Link>
     </Col>
     <Col xs={6} md={4}>
-      xs=6 md=4
+      
     </Col>
       <hr />
   </Row>

@@ -11,6 +11,7 @@ import ServiceDetails from './components/services/servicedetails/ServiceDetails'
 import Services from './components/services/Services';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/login/privateRoute/PrivateRoute'
+import ContractUs from './components/contract/ContractUs';
 
 
 
@@ -27,8 +28,11 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/services">
+            <Route exact path="/services">
               <Services></Services>
+            </Route>
+            <Route exact path="/contractus">
+              <ContractUs></ContractUs>
             </Route>
             <Route path="/about">
               <About></About>

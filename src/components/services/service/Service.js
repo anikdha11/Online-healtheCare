@@ -3,7 +3,7 @@ import { Button, Card, CardGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "../services.css"
 const Service = ({ service }) => {
-  const { name, img, details,id } = service;
+  const { name, img, details, id } = service;
   return (
     <div>
       <CardGroup className="">
