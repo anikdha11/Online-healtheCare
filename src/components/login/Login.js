@@ -32,8 +32,7 @@ const Login = () => {
             </Form>
 
             <div className="mt-3">
-                <Button onClick={signInUsingGoogle} variant="outline-primary">Google login</Button>{' '}
-                <p> <Link to="/register">New User?</Link></p>
+                <Button onClick={signInUsingGoogle} variant="secondary">Google login</Button>{' '}
             </div>
         </div>
     );

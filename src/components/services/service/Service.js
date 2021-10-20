@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button, Card, CardGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "../services.css"
 const Service = ({ service }) => {
-  const { name, img, details } = service;
+  const { name, img, details,id } = service;
   return (
     <div>
       <CardGroup className="">
@@ -15,7 +16,7 @@ const Service = ({ service }) => {
             </Card.Text>
           </Card.Body>
 
-          <Button className="w-50 mx-auto mb-3 w-sm-25" variant="outline-dark">More Details</Button>
+          <Link to={`/details/${id}`}><Button className="w-50 mx-auto mb-3 w-sm-25" variant="outline-dark">More Details</Button></Link>
 
         </Card>
       </CardGroup>

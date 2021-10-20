@@ -6,10 +6,11 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Home from './components/Home/Home';
 import Login from './components/login/Login';
-import PrivateRoute from './components/login/privateRoute/PrivateRoute';
 import NotFound from './components/NotFound/NotFound';
+import ServiceDetails from './components/services/servicedetails/ServiceDetails';
 import Services from './components/services/Services';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/login/privateRoute/PrivateRoute'
 
 
 
@@ -29,12 +30,15 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
-            <PrivateRoute path="/about">
+            <Route path="/about">
               <About></About>
-            </PrivateRoute>
+            </Route>
             <Route exact path="/login">
               <Login></Login>
             </Route>
+            <PrivateRoute exact path="/details/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
