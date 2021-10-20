@@ -1,12 +1,24 @@
 import React from 'react';
 import { Button, Col, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useHistory,useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
     const { signInUsingGoogle, handleNameChanged,
         handlePassword, handleRegistration, toggoleLogin, isLogin } = useAuth();
+        const location = useLocation()
+        const history = useHistory();
+
+   const redirect_uri =location.state?.from || '/home'
+ console.log('came from', location.state?.from)
+const handleGoogleLogin = () =>{
+     signInUsingGoogle()
+     .then(result =>{
+     history.push(redirect_uri)
+     })
+}
+
     return (
         <div className="mb-4 App">
 
@@ -32,7 +44,7 @@ const Login = () => {
             </Form>
 
             <div className="mt-3">
-                <Button onClick={signInUsingGoogle} variant="secondary">Google login</Button>{' '}
+                <Button onClick={handleGoogleLogin} variant="secondary">Google login</Button>{' '}
             </div>
         </div>
     );
