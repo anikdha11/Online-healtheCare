@@ -19,7 +19,7 @@ const TopBanner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://lh3.googleusercontent.com/proxy/iV8_-ToKB1lRezfVSCDF7blKba9t4HH7KNPiMkQWxSuJaJQicKoE5vp_xFMGv0Cgh48E1OM0m5q0013wHa-sku1YC4BrHf-0u9nqyZyzrsNrsf9vmQ"
+                        src="https://image.freepik.com/free-photo/essential-oil-peppermint-bottle-with-fresh-green-peppermint_1150-38027.jpg"
                         alt="Second slide"
                     />
                     <Carousel.Caption>
