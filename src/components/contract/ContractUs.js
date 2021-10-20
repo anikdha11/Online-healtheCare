@@ -3,7 +3,7 @@ import { Form } from 'react-bootstrap';
 
 const ContractUs = () => {
     return (
-        <div className="App w-75 mx-auto">
+        <div id="contractus" className="App w-75 mx-auto">
             <h1 className="fw-bold text-warning">Contract Us</h1>
 
             <br />

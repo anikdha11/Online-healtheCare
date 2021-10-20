@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
   const { users, logOut } = useAuth();
@@ -14,8 +14,8 @@ const Header = () => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-center">
             <Nav.Link as={Link} to="/home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/home#services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/contractus">Contract Us</Nav.Link>
+            <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
+            <Nav.Link as={HashLink} to="/home#contractus">Contract Us</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             {users?.displayName ?
               <Button onClick={logOut} variant="outline-success">logout</Button> :
